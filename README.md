@@ -1,15 +1,6 @@
 yii2-ajaxcrud modify from JHONITVN
 =============
 
-[![Latest Stable Version](https://poser.pugx.org/johnitvn/yii2-ajaxcrud/v/stable)](https://packagist.org/packages/johnitvn/yii2-ajaxcrud)
-[![License](https://poser.pugx.org/johnitvn/yii2-ajaxcrud/license)](https://packagist.org/packages/johnitvn/yii2-ajaxcrud)
-[![Total Downloads](https://poser.pugx.org/johnitvn/yii2-ajaxcrud/downloads)](https://packagist.org/packages/johnitvn/yii2-ajaxcrud)
-
-Gii CRUD template for Single Page Ajax Administration for yii2
-
-![yii2 ajaxcrud extension screenshot](https://c1.staticflickr.com/1/330/18659931433_6e3db2461d_o.png "yii2 ajaxcrud extension screenshot")
-
-
 Features
 ------------
 + Create, read, update, delete in onpage with Ajax
@@ -25,13 +16,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist johnitvn/yii2-ajaxcrud "@dev"
+php composer.phar require --prefer-dist origrata/yii2-ajaxcrud "@dev"
 ```
 
 or add
 
 ```
-"johnitvn/yii2-ajaxcrud": "^2.1"
+"origrata/yii2-ajaxcrud": "^2.1"
 ```
 
 to the require section of your `composer.json` file.
@@ -47,17 +38,18 @@ Let 's add into modules config in your main config file
 ```php
 'modules' => [
     'gridview' =>  [
-        'class' => \kartik\grid\Module::class,
-        'bsVersion' => '4.x', // or '3.x'
-        // 'downloadAction' => 'gridview/export/download',
-        // 'i18n' => [],
-        // 'exportEncryptSalt' => 'tG85vd1',
+        'class' => \kartik\grid\Module::class,      
     ]       
 ]
 ```
 Note: Font Awesome icons not required! See [Bootstrap icons](https://demos.krajee.com/grid#bootstrap-icons)!
 
 You can then access Gii through the following URL:
+
+
+ in param.php file add
+ 
+ 'bsVersion' => '5.x',
 
 http://localhost/path/to/index.php?r=gii
 
