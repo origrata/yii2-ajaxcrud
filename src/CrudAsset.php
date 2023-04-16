@@ -6,6 +6,7 @@ use yii\web\AssetBundle;
 
 /**
  * @author John Martin <john.itvn@gmail.com>
+  * @Modify origrata <ori.abstrak@gmail.com>
  * @since 1.0
  */
 class CrudAsset extends AssetBundle
@@ -18,8 +19,8 @@ class CrudAsset extends AssetBundle
 
     public $depends = [
         'yii\web\YiiAsset',
-        'yii\bootstrap4\BootstrapAsset',
-        'yii\bootstrap4\BootstrapPluginAsset',
+        'yii\bootstrap5\BootstrapAsset',
+        'yii\bootstrap5\BootstrapPluginAsset',
         'kartik\grid\GridViewAsset',
     ];
 
