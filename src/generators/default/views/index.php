@@ -2,7 +2,7 @@
 
 use yii\helpers\Inflector;
 use yii\helpers\StringHelper;
-use yii\bootstrap4\Modal;
+use yii\bootstrap5\Modal;
 use yii\helpers\Url;
 use yii\helpers\Html;
 
@@ -16,10 +16,10 @@ echo "<?php\n";
 ?>
 use yii\helpers\Url;
 use yii\helpers\Html;
-use yii\bootstrap4\Modal;
+use yii\bootstrap5\Modal;
 use kartik\grid\GridView;
-use johnitvn\ajaxcrud\CrudAsset;
-use johnitvn\ajaxcrud\BulkButtonWidget;
+use origrata\ajaxcrud\CrudAsset;
+use origrata\ajaxcrud\BulkButtonWidget;
 
 /* @var $this yii\web\View */
 <?= !empty($generator->searchModelClass) ? "/* @var \$searchModel " . ltrim($generator->searchModelClass, '\\') . " */\n" : '' ?>
